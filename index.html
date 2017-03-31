@@ -133,7 +133,7 @@ saveButton.addEventListener('click',function( event ) {
   
     var snap =  document.getElementById('colors_sketch').getContext('2d')
 //     var img = snap.toDataURL('image/jpeg', 1.0)
-    var img = ($.snap[0]).toDataURL("image/png")
+    var src = ($('#colors_sketch')[0]).toDataURL("image/png")
     var newBox = document.createElement( 'div' )
     console.log( newBox )
     var embedPic ='<img src="'+img+'"/>'
