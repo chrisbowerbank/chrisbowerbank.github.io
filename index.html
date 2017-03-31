@@ -131,8 +131,8 @@ var saveButton = document.getElementById('save_to_gal')
 saveButton.addEventListener('click',function( event ) {
     event.preventDefault()
   
-    var screenshot =  document.getElementById('colors_sketch').getContext('2d')
-    var img = screenshot.toDataURL('image/jpeg', 1.0)
+    var snap =  document.getElementById('colors_sketch').getContext('2d')
+    var img = snap.toDataURL('image/jpeg', 1.0)
     var newBox = document.createElement( 'div' )
     console.log( newBox )
     var embedPic ='<img src="'+img+'"/>'
@@ -140,7 +140,7 @@ saveButton.addEventListener('click',function( event ) {
     document.getElementById('under_canvas').appendChild( newBox.innerHTML( embedPic) )
 
 })
-
+ 
 
 
 
