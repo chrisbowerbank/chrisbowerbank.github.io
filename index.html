@@ -34,7 +34,7 @@
 
       .tools { margin-bottom: 10px; }
       .tools a {
-        border: 1px solid black; height: 20px; line-height: 30px; padding: 0 10px; vertical-align: middle; text-align: center; text-decoration: none; display: inline-block; color: black; font-weight: bold;
+        border: 1px solid black; height: 30px; line-height: 30px; padding: 0 10px; vertical-align: middle; text-align: center; text-decoration: none; display: inline-block; color: black; font-weight: bold;
       }
     </style>
   </head>
@@ -49,16 +49,13 @@
 
       <div class='demo' id='colors_demo'>
         <div class='tools'>
-          <a id=save_to_gal href='#colors_sketch' style='float: right; width: 100px; font-size: 13px;'>save to gal</a>
+          <a id=save_to_gal style='float: right; width: 100px; font-size: 13px;'>save to gal</a>
         </div>
         <canvas id='colors_sketch' width='800' height='300' border: "1px" style="width:800px;height:300px;border:1px solid #404040;background-image: url(artsy_new.jpg);"></canvas>
         <script type='text/javascript'>
           $(function() {
             $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#835C3B', '#000', '#fff'], function() {
               $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
-            });
-            $.each([3], function() {
-              $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='font-size:10px;border:none;'>" + this + "</a> ");
             });
             $.each([5], function() {
               $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='font-size:13px;border:none;'>" + this + "</a> ");
