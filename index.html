@@ -34,7 +34,7 @@
 
       .tools { margin-bottom: 10px; }
       .tools a {
-        border: 1px solid black; height: 30px; line-height: 30px; padding: 0 10px; vertical-align: middle; text-align: center; text-decoration: none; display: inline-block; color: black; font-weight: bold;
+        border: 1px solid black; height: 20px; line-height: 30px; padding: 0 10px; vertical-align: middle; text-align: center; text-decoration: none; display: inline-block; color: black; font-weight: bold;
       }
     </style>
   </head>
@@ -55,7 +55,7 @@
         <script type='text/javascript'>
           $(function() {
             $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#835C3B', '#000', '#fff'], function() {
-              $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 5px; background: " + this + ";'></a> ");
+              $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
             });
             $.each([3], function() {
               $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='font-size:10px;border:none;'>" + this + "</a> ");
