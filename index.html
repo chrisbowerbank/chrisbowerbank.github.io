@@ -126,10 +126,11 @@ var x = setInterval(function() {
 var gallery = []
 
 
-var saveButton = document.querySelector('#save_to_gal')
+var saveButton = document.getElementById('save_to_gal')
 
 saveButton.addEventListener('click',function( event ) {
     event.preventDefault()
+  
     var screenshot =  document.getElementById('colors_sketch').getContext('2d')
     var img = screenshot.toDataURL('image/jpeg', 1.0)
     var newBox = document.createElement( 'div' )
