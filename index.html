@@ -57,14 +57,41 @@
        <br></br>
      <br></br>
                 <center><h1 style="font-size: 24px;">paint for ashleigh!</h1></center>
-          <ol>
-            <li>paint</li>
-            <li>save to gal</li>
-            <li>scroll down to the gallery, right-click on your painted layer and save your painting</li>
-            <li>email your painted layer to <a href="mailto:misterbowerbank@gmail.com">misterbowerbank@gmail.com</a></li>
-             <li>check back in to see your painting in the gallery!</li>
-</ol>
-        <br></br>
+  
+      <!-- countdown timer til her bday -->
+  <center><p id="demo" style="font-size: 14px;"></p></center>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 2, 2017 00:00:01").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = "only " + days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s  until ashleigh sees your painting!";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "thank you to all of the contributing artists!";
+    }
+}, 1000);
+</script>
+
 <!--         <center><h1 style="font-size: 24px;">happy birthday ashleigh!</h1></center> -->
       </header>
 
@@ -101,43 +128,17 @@
     </article>
 
 
-    <!-- countdown timer til her bday -->
-  <center><p id="demo" style="font-size: 14px;"></p></center>
 
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("May 2, 2017 00:00:01").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-    // Get todays date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = "only " + days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s  until ashleigh sees your painting!";
-
-    // If the count down is over, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "thank you to all of the contributing artists!";
-    }
-}, 1000);
-</script>
 <br></br>
     
 
-
+<div style="font-size: 13px;"><p>paint something for ashleigh</p>
+  <p>save to gal</p>
+  <p>scroll down to the gallery, right-click on your painted layer and save your painting</p>
+  <p>email your painted layer to <a href="mailto:misterbowerbank@gmail.com">misterbowerbank@gmail.com</a></p>
+  <p>check back in to see your painting in the gallery!</p>
+</div>
+           
 
     <!-- <center><p><h4 style="font-size: 13px;">“Even a little tree will grow up to be a big tree. All it needs is water, sunshine and love - the same as all of us." — Bob Ross</h4><p><center> -->
     <br></br>
